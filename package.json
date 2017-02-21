@@ -1,5 +1,5 @@
 {
-  "name": "language-galen-v2-config",
+  "name": "language-galen-v2",
   "author": "Frank Betorina",
   "version": "0.1.0",
   "description": "Provides basic syntax highlighting for configuration files that are just composed of comments or non-comments",
