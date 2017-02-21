@@ -1,7 +1,7 @@
 {
   "name": "language-galen-v2",
   "author": "Frank Betorina",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Provides basic syntax highlighting for Galen Framework v2 .test and .gspec files",
   "keywords": [
     "galen",
