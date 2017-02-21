@@ -1,0 +1,17 @@
+{
+  "name": "language-galenv2-config",
+  "author": "Frank Betorina",
+  "version": "0.1.0",
+  "description": "Provides basic syntax highlighting for configuration files that are just composed of comments or non-comments",
+  "keywords": [
+    "galen",
+    "v2",
+    "test",
+    "syntax"
+  ],
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.196.0 <2.0.0"
+  }
+}

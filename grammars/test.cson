@@ -1,0 +1,36 @@
+'name': 'Galen Test'
+'scopeName': 'text.galen-t'
+'fileTypes': ['test']
+'patterns': [
+  {
+    'include': '#comment'
+  }
+  {
+    'include': '#variable'
+  }
+  {
+    'include': '#keyword'
+  }
+  {
+    'include': '#rule'
+  }
+  {
+    'include': '#table'
+  }
+]
+'repository':
+  'comment':
+    'name': 'comment.line.number-sign-t'
+    'match': '^\\s*(#).*'
+  'variable':
+    'name': 'variable.parameter.galen-t'
+    'match': '(\\$|\\%)\\{[-A-Za-z_]*\\}'
+  'keyword':
+    'name': 'keyword.operator.galen-t'
+    'match': '^\\s*(?i)(wait|inject|check|selenium|jsfactory|open|resize|cookie|run|properties|dump)'
+  'rule':
+    'name': 'entity.name.function.galen-t'
+    'match': '^\\s*(@@).*'
+  'table':
+    'name': 'support.function.galen-t'
+    'match': '^\\s*(\\|).*'

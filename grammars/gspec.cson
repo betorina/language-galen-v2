@@ -1,0 +1,86 @@
+'name': 'Galen Test'
+'scopeName': 'source.galen-s'
+'fileTypes': ['gspec']
+'patterns': [
+  {
+    'include': '#comment'
+  }
+  {
+    'include': '#spec'
+  }
+  {
+    'include': '#spec-param'
+  }
+  {
+    'include': '#object'
+  }
+  {
+    'include': '#object-prop'
+  }
+  {
+    'include': '#group'
+  }
+  {
+    'include': '#test'
+  }
+  {
+    'include': '#css-selector'
+  }
+  {
+    'include': '#css-value'
+  }
+  {
+    'include': '#variable'
+  }
+  {
+    'include': '#rule-var'
+  }
+  {
+    'include': '#number'
+  }
+]
+'repository':
+  'comment':
+    'name': 'comment.line.number-sign-t'
+    'match': '^\\s*(#).*'
+  'spec':
+    'name': 'support.function.galen-s'
+    'match': '^\\s*(?i)(near|below|above|left-of|left-right|inside|width|height|aligned|text|centered|absent|contains|on|component|color-scheme|image)\\s'
+  'spec-param':
+    'name': 'support.function.galen-s'
+    'match': '\\s*(?i) (contains|inside|top|bottom|left|right|is|contains|starts|ends|matches|vertically|horizontally|visible|on|parent)\\s'
+  'object':
+    'name': 'entity.name.function.galen-s'
+    'match': '^\\s*(@).*'
+  'object-prop':
+    'match': '^\\s*([a-zA-Z0-9_\-]+)'
+    'captures':
+      '1':
+        'name': 'variable.parameter.galen-s'
+  'group':
+    'name': 'constant.numeric.galen-s'
+    'match': '^\\s*(= .+ =)$'
+  'test':
+    'name': 'variable.parameter.galen-s'
+    'match': '\\s*([-A-Za-z_\\., 0-9\\*]*)(:)\\n'
+  'css-selector':
+    'name': 'entity.name.function.galen-s'
+    'match': '\\s*(\\s\\.[a-zA-Z0-9_\-]+)'
+  'css-value':
+    'match': '\\s*([0-9\\*]*) ?(px|%)'
+    'captures':
+      '1':
+        'name': 'constant.numeric.galen-s'
+      '2':
+        'name': 'keyword.operator.galen-s'
+  'variable':
+    'name': 'string.unquoted.galen-t'
+    'match': '(\\$|\\%)\\{[-A-Za-z_]*\\}'
+  'rule-var':
+    'match': '^\\s*\\|\\s([a-zA-Z0-9_\-]+)\\s'
+    'captures':
+      '1':
+        'name': 'string.unquoted.galen-s'
+  'number':
+    'match': '\\s*([0-9\\*]*\\s)'
+    'name': 'constant.numeric.galen-s'
