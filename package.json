@@ -1,5 +1,5 @@
 {
-  "name": "language-galenv2-config",
+  "name": "language-galen-v2-config",
   "author": "Frank Betorina",
   "version": "0.1.0",
   "description": "Provides basic syntax highlighting for configuration files that are just composed of comments or non-comments",
@@ -9,7 +9,7 @@
     "test",
     "syntax"
   ],
-  "repository": "",
+  "repository": "https://github.com/betorina/language-galen-v2",
   "license": "MIT",
   "engines": {
     "atom": ">=0.196.0 <2.0.0"
